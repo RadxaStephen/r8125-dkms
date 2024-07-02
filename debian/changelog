@@ -1,3 +1,16 @@
+r8125 (9.013.02-1-1) unstable; urgency=medium
+
+  [ ZHANG Yuntian ]
+  * Update to latest upstream release (9.013.02-1)
+  * revert: set BUILD_EXCLUSIVE_CONFIG="CONFIG_PCI"
+
+  [ dependabot[bot] ]
+  * Bump actions/upload-artifact from 3 to 4
+  * Bump actions/download-artifact from 3 to 4
+  * Bump softprops/action-gh-release from 1 to 2
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Tue, 02 Jul 2024 18:44:32 +0800
+
 r8125 (9.013.02-1) unstable; urgency=medium
 
   * New upstream release 9.013.02.  (Closes: #1071559)
