@@ -85,7 +85,7 @@ index 90a8707..766bb21 100755
 +        u8 led_feature;
 +        int ret, i;
 +
-+        ret = of_property_read_u16_array(tp->pci_dev->dev.of_node,
++        ret = of_property_read_u32_array(tp->pci_dev->dev.of_node,
 +                                  "realtek,led-data", led_data, 4);
 +
 +        if (!ret) {
