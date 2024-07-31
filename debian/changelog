@@ -1,3 +1,18 @@
+r8125 (9.013.02-1-2) jammy; urgency=medium
+
+  [ ZHANG Yuntian ]
+  * ci: fix release issue
+  * Create CODEOWNERS
+  * ci: sync with rsetup
+  * fix: call our Makefile in CI
+  * ci: install runtime dependencies
+  * ci: install build-dep
+
+  [ RadxaMitchell ]
+  * debian: patches: add patch and update series
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Wed, 31 Jul 2024 06:47:57 +0000
+
 r8125 (9.013.02-1-1) unstable; urgency=medium
 
   [ ZHANG Yuntian ]
