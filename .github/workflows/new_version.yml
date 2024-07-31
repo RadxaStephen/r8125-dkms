@@ -18,7 +18,7 @@ jobs:
       - name: Create release commit
         run: |
           sudo apt-get update
-          sudo apt-get install --no-install-recommends -y git-buildpackage
+          sudo apt-get install --no-install-recommends -y devscripts lintian git-buildpackage
           export DEBEMAIL="dev@radxa.com"
           export DEBFULLNAME='"Radxa Computer Co., Ltd"'
           git config user.name "github-actions[bot]"
@@ -26,7 +26,6 @@ jobs:
           make -f .github/build_assets/Makefile dch
       - name: Test
         run: |
-          sudo apt-get build-dep --no-install-recommends -y .
           make -f .github/build_assets/Makefile all test deb
       - name: Push
         run: |
