@@ -19,6 +19,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install --no-install-recommends -y devscripts lintian git-buildpackage
+          sudo apt-get build-dep --no-install-recommends -y .
           export DEBEMAIL="dev@radxa.com"
           export DEBFULLNAME='"Radxa Computer Co., Ltd"'
           git config user.name "github-actions[bot]"
