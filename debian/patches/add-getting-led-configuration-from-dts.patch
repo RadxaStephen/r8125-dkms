@@ -81,7 +81,7 @@ index 90a8707..766bb21 100755
 +rtl8125_led_configuration(struct rtl8125_private *tp)
 +{
 +        const int led_regs[] = { LEDSEL0, LEDSEL1, LEDSEL2, LEDSEL3 }; /* LEDSEL 0-3 */
-+        u16 led_data[4];
++        u32 led_data[4];
 +        u8 led_feature;
 +        int ret, i;
 +
